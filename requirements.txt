@@ -3,4 +3,5 @@ pandas
 seaborn
 matplotlib
 dill
+flask
 -e .
