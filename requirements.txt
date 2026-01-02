@@ -4,6 +4,6 @@ seaborn
 matplotlib
 dill
 flask
-scikit-learn
+scikit-learn ==1.7.2
 gunicorn
 -e .

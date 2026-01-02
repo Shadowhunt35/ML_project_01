@@ -16,6 +16,8 @@ class PredictPipeline:
             model = load_object(file_path=model_path)
             preprocessor= load_object(file_path=preprocessor_path)
             
+            features = features[preprocessor.feature_names_in_]
+            
             data_scaled = preprocessor.transform(features)
             preds = model.predict(data_scaled)
             return preds
